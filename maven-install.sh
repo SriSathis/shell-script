@@ -30,3 +30,4 @@ echo maven installed to ${install_dir}
 mvn --version
 
 printf "\n\nTo get mvn in your path, open a new shell or execute: source /etc/profile.d/maven.sh\n"
+source /etc/profile.d/maven.sh
