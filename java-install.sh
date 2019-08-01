@@ -33,3 +33,4 @@ java -version
 
 printf "\n\nTo get java in your path, open a new shell or execute: source /etc/profile.d/java.sh\n"
 
+source /etc/profile.d/java.sh
