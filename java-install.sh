@@ -6,6 +6,7 @@ echo "Java is installing... Version is" ${java_version}
 url="https://repo.huaweicloud.com/java/jdk/8u191-b12/jdk-8u191-linux-x64.tar.gz"
 install_dir="/usr/local/src"
 cd ${install_dir}
+yum install -y wget
 wget  ${url} 
 tar -xzf jdk-8u191-linux-x64.tar.gz
 cd ${java_version}
