@@ -4,7 +4,7 @@
 
 program=Weather
 version=1.1
-year=2018
+year=2019
 developer=computer-geek64
 
 case $1 in
