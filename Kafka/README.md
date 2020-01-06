@@ -2,6 +2,10 @@
 Apache Kafka is an open source distributed stream processing platform. From a high-level perspective, Kafka is a distributed messaging system that allows producers to send messages to a topic and consumers to read messages from a topic. Kafka is massively scalable and offers high throughput and low latency when operated in a cluster. This post explains how to set up a Kafka cluster consisting of 3 nodes for a development environment.
 ## Install Java
 Download the Java installation script file from Project, and run the script file
+> cd kafka-connect-jdbc/java
+```
+sh java-ins.sh
+```
 ## Install Kafka
 ### Downloading Kafka:
 [Download Kafka](http://apache.forsale.plus/kafka/2.4.0/kafka_2.11-2.4.0.tgz) and unpack it under /home
@@ -37,9 +41,8 @@ initLimit=10
 syncLimit=5
  
 # zoo servers
-server.1=kafka1:2888:3888
-server.2=kafka2:2888:3888
-server.3=kafka3:2888:3888
+server.1=server4:2888:3888
+server.2=server8:2888:3888
 #add here more servers if you want
 ```
 Start Zookeeper on all three servers with **daemon** mode
@@ -63,7 +66,7 @@ log.dirs=/tmp/kafka-logs-2
 # server. e.g. "127.0.0.1:3000,127.0.0.1:3001,127.0.0.1:3002".
 # You can also append an optional chroot string to the urls to specify the
 # root directory for all kafka znodes.
-zookeeper.connect=kafka1.fritz.box:2181,kafka2.fritz.box:2181,kafka3.fritz.box
+zookeeper.connect=server4:2181,server8:2181
 ```
 Start Kafka on all three nodes with **daemon** mode:
 ```
@@ -86,5 +89,5 @@ Connecting to server4:2181
 WATCHER::
 
 WatchedEvent state:SyncConnected type:None path:null
-[1, 2, 3]
+[1, 2]
 ```
