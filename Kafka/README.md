@@ -4,9 +4,7 @@ Apache Kafka is an open source distributed stream processing platform. From a hi
 Download the Java installation script file from Project, and run the script file
 ## Install Kafka
 Downloading Kafka:
-Download Kafka and unpack it under /home
-
-http://apache.forsale.plus/kafka/2.4.0/kafka_2.11-2.4.0.tgz
+[Download Kafka](http://apache.forsale.plus/kafka/2.4.0/kafka_2.11-2.4.0.tgz) and unpack it under /home
 ```
 wget http://apache.forsale.plus/kafka/2.4.0/kafka_2.11-2.4.0.tgz
 tar -xzf kafka_2.11-2.4.0.tgz
