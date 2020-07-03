@@ -3,8 +3,8 @@ set -e
 
 java_version=${java_version:-jdk1.8.0_191}
 echo "Java is installing... Version is" ${java_version}
-#url="https://repo.huaweicloud.com/java/jdk/8u191-b12/jdk-8u191-linux-x64.tar.gz"
-url="https://login.lima.ai/api/kube/binary/java/jdk-8u191-linux-x64.tar.gz"
+url="https://repo.huaweicloud.com/java/jdk/8u191-b12/jdk-8u191-linux-x64.tar.gz"
+#url="https://login.lima.ai/api/kube/binary/java/jdk-8u191-linux-x64.tar.gz"
 install_dir="/usr/local/src"
 cd ${install_dir}
 yum install -y wget
